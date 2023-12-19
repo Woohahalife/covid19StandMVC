@@ -1,1 +1,24 @@
 
+debug: true
+#모든 Actuator 엔드포인트를 노출
+
+spring:
+#  mvc:
+#    view:
+#      suffix: .html
+
+# 시큐리티 기본 설정
+  security:
+    user:
+      name: user
+      password: 1234
+
+
+# 서버 기본 설정
+server:
+  error:
+    # 에러 페이지 설정
+    path: /error
+    #기본 에러 페이지 off
+    whitelabel:
+      enabled: false
