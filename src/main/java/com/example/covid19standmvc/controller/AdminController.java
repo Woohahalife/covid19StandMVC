@@ -1,2 +1,31 @@
-package com.example.covid19standmvc.controller;public class AdminController {
+package com.example.covid19standmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/admin")
+public class AdminController {
+
+    @GetMapping("/places")
+    public String adminPlaces() {
+        return "admin/places";
+    }
+
+    @GetMapping("/places/{placeId}")
+    public String adminPlacesDetail(@PathVariable Integer placeId) {
+        return "admin/places-detail";
+    }
+
+    @GetMapping("/events")
+    public String adminEvents() {
+        return "admin/events";
+    }
+
+    @GetMapping("/events/{eventId}")
+    public String adminEvents(@PathVariable Integer eventId) {
+        return "admin/events-detail";
+    }
 }

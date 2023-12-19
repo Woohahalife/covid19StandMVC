@@ -1,2 +1,19 @@
-package com.example.covid19standmvc.controller;public class AuthController {
+package com.example.covid19standmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class AuthController {
+
+    @GetMapping("/login")
+    public String login() {
+        return "auth/login";
+    }
+
+    @GetMapping("/sign-up")
+    public String signUp() {
+        return "auth/sign-up";
+    }
+
 }
