@@ -1,7 +1,5 @@
 
 debug: true
-#모든 Actuator 엔드포인트를 노출
-
 spring:
 #  mvc:
 #    view:
@@ -22,3 +20,5 @@ server:
     #기본 에러 페이지 off
     whitelabel:
       enabled: false
+
+
