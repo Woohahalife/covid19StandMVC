@@ -16,9 +16,9 @@ spring:
 server:
   error:
     # 에러 페이지 설정
-    path: /error
+    path:
     #기본 에러 페이지 off
     whitelabel:
-      enabled: false
+      enabled: true
 
 
